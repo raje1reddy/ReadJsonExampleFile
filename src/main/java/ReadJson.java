@@ -12,24 +12,33 @@ public class ReadJson {
         try {
 
             // JSON file to Java object
-            EmployeeList[] staff = mapper.readValue(new File("employees.json"), EmployeeList[].class);
+            EmployeeDetails staff = mapper.readValue(new File("employees.json"), EmployeeDetails.class);
+                System.out.println(staff.getAddress().getCity());
+                System.out.println(staff.getAddress().getStreet());
+                System.out.println(staff.getDepartment());
+                System.out.println(staff.getAddress().toString());
+                System.out.println(staff.getDirect_reports());
+                System.out.println(staff.getEmp_name());
+                System.out.println(staff.getEmp_id());
+                System.out.println(staff.getSalary());
+                System.out.println(staff.getEmp_designation());
+                System.out.println(staff.toString());
 
+           /* for(EmployeeDetails employeeDetails: staff) {
+                System.out.println(employeeLists.getAddress().getCity());
+                System.out.println(employeeLists.getAddress().getStreet());
+                System.out.println(employeeLists.getAddress().getClass());
 
-            for(EmployeeList employeeLists : staff) {
-                System.out.println(employeeLists.getEmployee().getFirstName());
-                System.out.println(employeeLists.getEmployee().getLastName());
-                System.out.println(employeeLists.getEmployee().getWebsite());
-
-                Employee emp = employeeLists.getEmployee();
-                System.out.println(emp.getFirstName());
-                System.out.println(emp.getLastName());
-                System.out.println(emp.getWebsite());
+               // Address emp = employeeLists.getAddress();
+               // System.out.println(emp.getFirstName());
+               // System.out.println(emp.getLastName());
+               // System.out.println(emp.getWebsite());
 
 
             }
 
 
-
+*/
 
                 //employeeList.getEmployee().getLastName();
                 //employeeList.getEmployee().getWebsite();

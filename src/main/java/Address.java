@@ -1,47 +1,34 @@
 
-public class Employee
+public class Address
 {
-    private String firstName;
+    private String city;
 
-    private String lastName;
+    private String street;
 
-    private String website;
-
-    public String getFirstName ()
+    public String getCity ()
     {
-        return firstName;
+        return city;
     }
 
-    public void setFirstName (String firstName)
+    public void setCity (String city)
     {
-        this.firstName = firstName;
+        this.city = city;
     }
 
-    public String getLastName ()
+    public String getStreet ()
     {
-        return lastName;
+        return street;
     }
 
-    public void setLastName (String lastName)
+    public void setStreet (String street)
     {
-        this.lastName = lastName;
-    }
-
-    public String getWebsite ()
-    {
-        return website;
-    }
-
-    public void setWebsite (String website)
-    {
-        this.website = website;
+        this.street = street;
     }
 
     @Override
     public String toString()
     {
-        return "ClassPojo [firstName = "+firstName+", lastName = "+lastName+", website = "+website+"]";
+        return "ClassPojo [city = "+city+", street = "+street+"]";
     }
 }
-			
-		
+
